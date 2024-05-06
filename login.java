@@ -16,7 +16,7 @@ public class login {
 
         
         WebElement passwordField = driver.findElement(By.id("password"));
-        passwordField.sendKeys("pavi3@arul");
+        passwordField.sendKeys("********");
   
         WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
         loginButton.click();
