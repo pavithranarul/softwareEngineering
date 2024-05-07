@@ -14,10 +14,7 @@ ChromeDriver driver = new ChromeDriver();
  System.out.println("Number of Check boxes : "+Integer.toString(CheckBoxes.size()));
 CheckBoxes.get(0).click();
 int checkedCount=0, uncheckedCount=0;
- for(int i=0; i<CheckBoxes.size(); i++)
- {
-System.out.println(i+" checkbox is selected "+CheckBoxes.get(i).isSelected()); 
-	if(CheckBoxes.get(i).isSelected())
+	if(CheckBoxes.get(0).isSelected())
 	{
 		checkedCount++;
 	}
@@ -25,7 +22,7 @@ System.out.println(i+" checkbox is selected "+CheckBoxes.get(i).isSelected());
 	{ 	
 		uncheckedCount++;
 	}
- }
+ 
 System.out.println("number of selected checkbox: "+checkedCount); 
 System.out.println("number of unselected checkbox: "+uncheckedCount);
 }
